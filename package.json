@@ -1,6 +1,6 @@
 {
   "name": "startupcompany",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Typings for Startup Company modding.",
   "types": "dist/types.d.ts",
   "scripts": {

@@ -589,7 +589,7 @@ export interface ResearchItem {
 	name: EmployeeTypeName | ResearchItemName;
 	category: ResearchCategory;
 	points: number;
-	faIcon: string;
+	faIcon?: string;
 	unlockType?: UnlockType;
 	unlocks?: Array<ComponentName | ItemName | RackDeviceName>;
 	requiredInvestmentProject?: InvestmentProjectName;
