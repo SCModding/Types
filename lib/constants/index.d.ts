@@ -509,7 +509,8 @@ export interface FeatureCategory {
 export interface Feature {
 	name: FeatureName;
 	level: EmployeeLevel;
-	requirements: ComponentMap;
+	requirements?: ComponentMap;
+	dissatisfaction?: number;
 	faIcon: string;
 	categoryName: FeatureCategoryName;
 }
