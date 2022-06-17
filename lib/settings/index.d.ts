@@ -121,19 +121,19 @@ export interface RetirementFundHistory {
 export type DefaultCompetitorProduct = Pick<CompetitorProduct, "id" | "name" | "logoColorDegree" | "logoPath" | "users" | "productTypeName" | "version" | "controlled" | "history">;
 export interface CompetitorProduct {
 	controlled: boolean;
-	dealResults: [];
-	growth: number;
+	dealResults?: [];
+	growth?: number;
 	history: Array<CompetitorHistory>;
 	id: string;
 	logoColorDegree: number;
 	/** relative to app */
 	logoPath: string;
 	name: string;
-	ownedStocks: number;
-	priceExpectations: number;
+	ownedStocks?: number;
+	priceExpectations?: number;
 	productTypeName: ProductTypeName;
-	stockTransactions: Array<StockTransaction>;
-	stockVolume: number;
+	stockTransactions?: Array<StockTransaction>;
+	stockVolume?: number;
 	users: number;
 	version: number;
 }
