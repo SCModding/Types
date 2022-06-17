@@ -497,7 +497,7 @@ export interface FeatureNames {
 	HelpSystem: "HelpSystem";
 	ProfilePage: "ProfilePage";
 }
-export type AdsFeatureName = Pick<FeatureNames, "TextAds" | "BannerAds" | "VideoAds">;
+export type AdsFeatureName = Extract<FeatureName, "TextAds" | "BannerAds" | "VideoAds">;
 
 export interface FeatureCategory {
 	name: FeatureCategoryName;
